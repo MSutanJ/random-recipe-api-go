@@ -29,5 +29,6 @@ func main() {
 	r.Use(middleware.ValidateUserToken())
 	r.GET("/recipes", handler.HandlerGetRecipe)
 
-	r.Run(":8080")
+	r.Run()
+
 }
